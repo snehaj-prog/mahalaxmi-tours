@@ -1,0 +1,1058 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FAF7F2;
+    color: #5C4B3B;
+    line-height: 1.6;
+}
+
+header {
+    background: #F5EFE6;
+    padding: 18px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #E8DFD1;
+}
+
+header h1{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #5C4B3B;
+}
+
+header h1 span{
+    color: #A67C52;
+}
+
+nav a {
+    color: #5C4B3B;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #A67C52;
+}
+
+footer{
+    background: #F5EFE6;
+    border-top: 1px solid #E8DFD1;
+    text-align: center;
+    padding: 12px 20px;
+    margin-top: 70px;
+}
+
+footer p{
+    color: #5C4B3B;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+footer p:last-child{
+    margin-top: 8px;
+    color: #8A7460;
+    font-size: 14px;
+}
+
+.contact-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 40px;
+}
+.contact-container h2{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 54px;
+    font-weight: 700;
+    color: #5C4B3B;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.contact-subtitle {
+    color: #7A6753;
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 650px;
+    margin-bottom: 45px;
+}
+
+.contact-cards{
+    display: flex;
+    gap: 25px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.contact-card{
+    flex: 1;
+    min-width: 280px;
+    background: #FFFFFF;
+    border: 1px solid #E8DFD1;
+    border-radius: 18px;
+    padding: 30px;
+    transition: 0.3s ease;
+}
+
+.contact-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(92,75,59,0.12);
+}
+
+.contact-card h3{
+    color:#5C4B3B;
+    margin-bottom:15px;
+    font-size:22px;
+}
+
+.contact-card p{
+    color:#7A6753;
+    font-size:17px;
+    line-height:1.8;
+}
+.contact-buttons{
+    display: flex;
+    gap: 20px;
+    margin-top: 45px;
+    flex-wrap: wrap;
+}
+
+.contact-buttons a{
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.btn-primary{
+    background: #5C4B3B;
+    color: #FAF7F2;
+}
+
+.btn-primary:hover{
+    background: #A67C52;
+}
+.btn-secondary{
+    background: #5C4B3B;
+    color: #FAF7F2;
+    border: 1px solid #5C4B3B;
+}
+
+.btn-secondary:hover{
+    background: #A67C52;
+    border-color: #A67C52;
+    color: #FAF7F2;
+}
+.contact-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 20px;
+}
+
+.contact-box{
+    width: 100%;
+    max-width: 950px;
+    background: #FFFFFF;
+    border: 1px solid #E8DFD1;
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 12px 35px rgba(92,75,59,0.08);
+}
+
+.hero{
+    height: 90vh;
+    background: linear-gradient(rgba(92,75,59,0.45), rgba(92,75,59,0.45)),
+                url("images/hero.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content{
+    max-width: 750px;
+}
+
+.hero-content h2{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 65px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.hero-content p{
+    font-size: 20px;
+    color: #F8F4EE;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    background: #C8A97E;
+    color: #FFFFFF;
+    padding: 15px 35px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.hero-btn:hover{
+    background: #A67C52;
+}
+/* Welcome Section */
+
+.welcome{
+    padding: 80px 8%;
+    background: #F8F4EE;
+}
+
+.welcome-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.welcome-image{
+    flex: 1;
+}
+
+.welcome-image img{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.welcome-content{
+    flex: 1;
+}
+
+.welcome-content h2{
+    font-size: 45px;
+    color: #5C4B3B;
+    margin-bottom: 25px;
+    font-family: "Cormorant Garamond", serif;
+}
+
+.welcome-content p{
+    font-size: 18px;
+    line-height: 1.9;
+    color: #555;
+    margin-bottom: 18px;
+}
+
+.read-btn{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 35px;
+    background: #C8A97E;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 17px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.read-btn:hover{
+    background: #A67C52;
+}
+
+@media(max-width:900px){
+
+    .welcome-container{
+        flex-direction: column;
+    }
+
+    .welcome-content{
+        text-align:center;
+    }
+
+}
+/* ==========================
+   WHY CHOOSE US
+========================== */
+
+.why-choose{
+    padding: 90px 8%;
+    background: #FFFDF9;
+    text-align: center;
+}
+
+.why-choose h2{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 48px;
+    color: #5C4B3B;
+    margin-bottom: 50px;
+}
+
+.why-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.why-card{
+    background: #F8F4EE;
+    padding: 35px 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.why-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.12);
+}
+
+.why-card h3{
+    color: #5C4B3B;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.why-card p{
+    color: #666;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+@media(max-width:992px){
+
+    .why-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:600px){
+
+    .why-container{
+        grid-template-columns:1fr;
+    }
+
+    .why-choose h2{
+        font-size:36px;
+    }
+
+}
+
+/* ==========================
+   CUSTOMER REVIEWS
+========================== */
+
+.reviews{
+    padding: 90px 8%;
+    background: #F8F4EE;
+    text-align: center;
+}
+
+.reviews h2{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 48px;
+    color: #5C4B3B;
+    margin-bottom: 50px;
+}
+
+.review-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.review-card{
+    background: #FFFFFF;
+    padding: 35px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.review-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.12);
+}
+
+.review-card h3{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.review-card p{
+    color: #666;
+    line-height: 1.8;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.review-card h4{
+    color: #5C4B3B;
+    font-size: 18px;
+}
+@media(max-width:992px){
+
+    .review-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:600px){
+
+    .review-container{
+        grid-template-columns:1fr;
+    }
+
+    .reviews h2{
+        font-size:36px;
+    }
+
+}
+/* ==========================
+   CALL TO ACTION
+========================== */
+
+.cta{
+    background:#5C4B3B;
+    padding:90px 20px;
+    text-align:center;
+}
+
+.cta-content{
+    max-width:700px;
+    margin:auto;
+}
+
+.cta h2{
+    font-family:'Cormorant Garamond', serif;
+    font-size:52px;
+    color:#fff;
+    margin-bottom:20px;
+}
+
+.cta p{
+    color:#F8F4EE;
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.cta-btn{
+    display:inline-block;
+    text-decoration:none;
+    background:#C8A97E;
+    color:#fff;
+    padding:16px 38px;
+    border-radius:50px;
+    font-size:18px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.cta-btn:hover{
+    background:#fff;
+    color:#5C4B3B;
+}
+
+/* ==========================
+   POPULAR DESTINATIONS
+========================== */
+
+.destinations{
+    padding: 90px 8%;
+    background: #F8F4EE;
+    text-align: center;
+}
+
+.destinations h2{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 48px;
+    color: #5C4B3B;
+    margin-bottom: 15px;
+}
+
+.destination-subtitle{
+    color: #777;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.destination-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.destination-card{
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    transition: .3s;
+}
+
+.destination-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,.15);
+}
+
+.destination-card img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+.destination-card h3{
+    padding: 22px;
+    font-size: 26px;
+    color: #5C4B3B;
+    font-family: "Cormorant Garamond", serif;
+}
+
+@media(max-width:992px){
+
+    .destination-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:650px){
+
+    .destination-container{
+        grid-template-columns:1fr;
+    }
+
+    .destinations h2{
+        font-size:36px;
+    }
+
+    .destination-card img{
+        height:240px;
+    }
+
+}
+/* ==========================
+   ABOUT HERO
+========================== */
+
+.about-hero{
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+                url("images/about-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about-overlay{
+    color: white;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.about-overlay h1{
+    font-size: 60px;
+    font-family: "Cormorant Garamond", serif;
+    margin-bottom: 20px;
+}
+
+.about-overlay p{
+    font-size: 20px;
+    line-height: 1.8;
+}
+@media(max-width:768px){
+
+    .about-overlay h1{
+        font-size:40px;
+    }
+
+    .about-overlay p{
+        font-size:17px;
+    }
+
+}
+/* ==========================
+   WHO WE ARE
+========================== */
+
+.who-we-are{
+    padding: 90px 8%;
+    background: #F8F4EE;
+}
+
+.who-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.who-image{
+    flex: 1;
+}
+
+.who-image img{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.who-content{
+    flex: 1;
+}
+
+.who-content h2{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 48px;
+    color: #5C4B3B;
+    margin-bottom: 25px;
+}
+
+.who-content p{
+    font-size: 18px;
+    line-height: 1.9;
+    color: #666;
+    margin-bottom: 20px;
+}
+@media(max-width:900px){
+
+    .who-container{
+        flex-direction: column;
+    }
+
+    .who-content{
+        text-align: center;
+    }
+
+}
+/* ==========================
+   MISSION & VISION
+========================== */
+
+.mission-vision{
+    padding: 90px 8%;
+    background: #FFFDF9;
+    text-align: center;
+}
+
+.mission-vision h2{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 48px;
+    color: #5C4B3B;
+    margin-bottom: 50px;
+}
+
+.mv-container{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.mv-card{
+    flex: 1;
+    background: #F8F4EE;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: .3s;
+}
+
+.mv-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.12);
+}
+
+.mv-card h3{
+    color: #5C4B3B;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.mv-card p{
+    color: #666;
+    line-height: 1.8;
+    font-size: 17px;
+}
+@media(max-width:768px){
+
+    .mv-container{
+        flex-direction: column;
+    }
+
+}
+
+/* ==========================
+   CORE VALUES
+========================== */
+
+.core-values{
+    padding: 90px 8%;
+    background: #F8F4EE;
+    text-align: center;
+}
+
+.core-values h2{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 48px;
+    color: #5C4B3B;
+    margin-bottom: 50px;
+}
+
+.values-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.value-card{
+    background: #FFFFFF;
+    padding: 35px 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.value-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.12);
+}
+
+.value-card h3{
+    color: #5C4B3B;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.value-card p{
+    color: #666;
+    line-height: 1.8;
+    font-size: 16px;
+}
+@media(max-width:992px){
+
+    .values-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:600px){
+
+    .values-container{
+        grid-template-columns:1fr;
+    }
+
+}
+
+/*==========================
+    SERVICES HERO
+===========================*/
+
+.services-hero{
+    height:60vh;
+    background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+               url("images/services-banner.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.services-overlay{
+    color:#fff;
+    padding:20px;
+}
+
+.services-overlay h1{
+    font-family:"Cormorant Garamond", serif;
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.services-overlay p{
+    font-size:20px;
+    line-height:1.8;
+}
+/*==========================
+    SERVICES INTRO
+===========================*/
+
+.services-intro{
+    padding:80px 10%;
+    text-align:center;
+    background:#F8F4EE;
+}
+
+.services-intro h2{
+    font-family:"Cormorant Garamond", serif;
+    font-size:48px;
+    color:#5C4B3B;
+    margin-bottom:25px;
+}
+
+.services-intro p{
+    max-width:850px;
+    margin:auto;
+    font-size:18px;
+    line-height:1.9;
+    color:#666;
+}
+/*==========================
+    SERVICES LIST
+===========================*/
+
+.services-list{
+    padding:90px 8%;
+    background:#FFFDF9;
+}
+
+.services-list h2{
+    text-align:center;
+    font-family:"Cormorant Garamond", serif;
+    font-size:50px;
+    color:#5C4B3B;
+    margin-bottom:60px;
+}
+
+.services-grid{
+    display:flex;
+    flex-direction:column;
+    gap:50px;
+}
+
+.service-box{
+    display:flex;
+    align-items:center;
+    background:#F8F4EE;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+/* Every second card reverse */
+.service-box:nth-child(even){
+    flex-direction:row-reverse;
+}
+
+.service-box img{
+    width:45%;
+    height:350px;
+    object-fit:cover;
+}
+
+.service-content{
+    width:55%;
+    padding:40px;
+}
+
+.service-content h3{
+    font-family:"Cormorant Garamond", serif;
+    font-size:34px;
+    color:#5C4B3B;
+    margin-bottom:20px;
+}
+
+.service-content p{
+    color:#666;
+    line-height:1.8;
+    margin-bottom:20px;
+    font-size:17px;
+}
+
+.service-content ul{
+    list-style:none;
+    margin-bottom:30px;
+}
+
+.service-content ul li{
+    margin-bottom:10px;
+    color:#555;
+    font-size:16px;
+}
+
+.service-btn{
+    display:inline-block;
+    text-decoration:none;
+    background:#C8A97E;
+    color:#fff;
+    padding:14px 35px;
+    border-radius:50px;
+    transition:.3s;
+    font-weight:600;
+}
+
+.service-btn:hover{
+    background:#A67C52;
+}
+@media(max-width:900px){
+
+    .service-box{
+        flex-direction:column !important;
+    }
+
+    .service-box img{
+        width:100%;
+        height:250px;
+    }
+
+    .service-content{
+        width:100%;
+        text-align:center;
+    }
+
+}
+
+/*==========================
+   SERVICE FEATURES
+===========================*/
+
+.service-features{
+    padding:90px 8%;
+    background:#F8F4EE;
+    text-align:center;
+}
+
+.service-features h2{
+    font-family:"Cormorant Garamond", serif;
+    font-size:48px;
+    color:#5C4B3B;
+    margin-bottom:50px;
+}
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.feature-card{
+    background:#fff;
+    padding:35px 25px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.feature-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 35px rgba(0,0,0,.12);
+}
+
+.feature-card h3{
+    font-size:22px;
+    color:#5C4B3B;
+    margin-bottom:15px;
+}
+
+.feature-card p{
+    color:#666;
+    line-height:1.8;
+}
+@media(max-width:992px){
+
+    .feature-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:600px){
+
+    .feature-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+/*==========================
+        OUR FLEET
+==========================*/
+
+.fleet{
+    padding:90px 8%;
+    background:#FFFDF9;
+    text-align:center;
+}
+
+.fleet h2{
+    font-family:"Cormorant Garamond", serif;
+    font-size:48px;
+    color:#5C4B3B;
+    margin-bottom:15px;
+}
+
+.fleet-subtitle{
+    max-width:750px;
+    margin:0 auto 50px;
+    color:#666;
+    font-size:18px;
+    line-height:1.8;
+}
+
+.fleet-gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.fleet-card{
+    background:#F8F4EE;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.fleet-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 18px 35px rgba(0,0,0,.15);
+}
+
+.fleet-card img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+    transition:.4s;
+}
+
+.fleet-card:hover img{
+    transform:scale(1.08);
+}
+
+.fleet-card h3{
+    padding:20px;
+    font-family:"Cormorant Garamond", serif;
+    font-size:28px;
+    color:#5C4B3B;
+}
