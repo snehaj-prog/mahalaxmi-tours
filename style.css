@@ -178,7 +178,7 @@ footer p:last-child{
 .hero{
     height: 90vh;
     background: linear-gradient(rgba(92,75,59,0.45), rgba(92,75,59,0.45)),
-                url("images/hero.png");
+                url("hero.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -562,7 +562,7 @@ footer p:last-child{
 .about-hero{
     height: 60vh;
     background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-                url("images/about-banner.jpg");
+                url("about-banner.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -780,7 +780,7 @@ footer p:last-child{
 .services-hero{
     height:60vh;
     background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
-               url("images/services-banner.jpg");
+               url("services-banner.jpg");
     background-size:cover;
     background-position:center;
     display:flex;
